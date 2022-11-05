@@ -4,34 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Travel</title>
 </head>
 <body>
     <header class="header">
-        <div class="header__container container">
-            <a href="#" class="header__logo">
-                <img src="/assets/svg/logo.svg" alt="logo">
-            </a>
-            <nav class="header__menu menu">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="#How" class="menu__link">How It Works</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#Plan" class="menu__link">Plan Your Trip</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#Destination" class="menu__link">Destinations</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#Stories" class="menu__link">Travel Stories</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="header__login">Login</button>
-        </div>
+        <div class="header__bg">
+            <div class="header__container container">
+                <a href="#" class="header__logo">
+                    <img src="/assets/svg/logo.svg" alt="logo">
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#How" class="menu__link">How It Works</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#Plan" class="menu__link">Plan Your Trip</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#Destination" class="menu__link">Destinations</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#Stories" class="menu__link">Travel Stories</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__login btn">Login</button>
+            </div>
+        </div>   
     </header>
     <main class="page">
         <section class="page__main-block main-block">
@@ -41,8 +45,9 @@
                     <div class="main-block__text">Receive personalized recommendations for countries, hotels, activities and more</div>
                     <form class="main-block__search-field">
                         <input type="text" placeholder="What would you like to do?" class="main-block__search">
-                        <button class="main-block__search">Start Planning</button>
+                        <button class="main-block__btn btn">Start Planning</button>
                     </form>
+                    <!-- <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="mountains" class="main-block__bg"> -->
                 </div>
             </div>
         </section>

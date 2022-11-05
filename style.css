@@ -2,8 +2,9 @@ html,
 body {
   height: 100%;
   line-height: 1;
-  font-family: Montserrat;
+  font-family: 'Red Hat Display', sans-serif;
   font-size: 20px;
+  line-height: 1.2;
   font-weight: 500;
   color: #252B42
 }
@@ -17,24 +18,58 @@ body {
   
 .container {
     max-width: 1200px;
-    padding: 0 15px;
+    padding: 40px 0;
     margin: 0 auto;
-    box-sizing: content-box;
+    box-sizing: border-box;
+}
+
+.btn{
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #0D606F;
+    border: none;
+    border-radius: 10px;
 }
 /*-------------------------------------------HEADER-------------------*/
 header {
-    background-color: rgba(242, 120, 92, 0.7);
+    position: relative;
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
-.header__container {
-    padding: 25px 0;
+
+.header__bg {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-size: 16px;
+    background-image: url(https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    z-index: 0;
 }
 
-.header__logo 
+header::before {
+    position: absolute;
+    content: '';
+    background: rgba(242, 120, 92, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header__container {
+    padding: 25px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    z-index: 2;
+}
+
+.header__logo {
+    margin-right: 166px;
+}
 
 .header__menu {
     
@@ -45,35 +80,78 @@ header {
 .menu__list {
     display: flex;
     gap: 42px;
+    
+}
+
+.menu__item {}
+
+.menu__link {
     color: #ffffff;
 }
 
-.menu__item 
-
-.menu__link 
-
 .header__login {
-    padding: 10px 30px;
+    margin-left: auto;
     font-size: 16px;
-    color: #ffffff;
-    background-color: #0D606F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /*-------------------------------------------MAIN-------------------*/
 .page 
 
-.page__main-block 
+.page__main-block {
+    background-image: url(https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center -90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-.main-block 
+.main-block {
 
-.main-block__container 
+}
 
-.main-block__body 
+.main-block__container {
+    padding: 0;
+}
 
-.main-block__title 
+.main-block__body {
+    padding: 142px 0;
+    width: 892px;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    color: #ffffff;
+}
+
+.main-block__title {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+}
 
 .main-block__text 
 
-.main-block__search-field 
+.main-block__search-field {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 18px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
 
-.main-block__search 
+.main-block__search {
+    display: block;
+    width: 60%;
+    border: none;
+    font-size: 24px;
+    font-family: 'Red Hat Display';
+    font-style: italic;
+    color:#f2775c
+}
+
+.main-block__btn {
+    display: block;
+    font-size: 24px;
+}
