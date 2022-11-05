@@ -6,7 +6,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
-  color: #252B42
+  color: #0D606F
 }
 
 .wrapper {
@@ -24,12 +24,19 @@ body {
 }
 
 .btn{
-    padding: 10px 30px;
+    padding: 14px 32px;
     font-size: 16px;
     color: #ffffff;
     background-color: #0D606F;
     border: none;
     border-radius: 10px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 40px;
+    color: #f2785c;
+    text-transform: uppercase;
 }
 /*-------------------------------------------HEADER-------------------*/
 header {
@@ -75,7 +82,7 @@ header::before {
     
 }
 
-.menu 
+.menu {}
 
 .menu__list {
     display: flex;
@@ -91,12 +98,13 @@ header::before {
 
 .header__login {
     margin-left: auto;
+    padding: 10px 30px;
     font-size: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /*-------------------------------------------MAIN-------------------*/
-.page 
+.page {}
 
 .page__main-block {
     background-image: url(https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
@@ -123,13 +131,14 @@ header::before {
 }
 
 .main-block__title {
+    padding-right: 108px;
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 700;
     font-size: 80px;
 }
 
-.main-block__text 
+.main-block__text {}
 
 .main-block__search-field {
     display: flex;
@@ -148,10 +157,53 @@ header::before {
     font-size: 24px;
     font-family: 'Red Hat Display';
     font-style: italic;
-    color:#f2775c
+    color:#f2785c
 }
 
 .main-block__btn {
     display: block;
     font-size: 24px;
 }
+/*-------------------------------------------3 STEPS-------------------*/
+.page__steps-block {}
+
+.steps {
+    padding-top: 40px;
+}
+
+.steps-block__container {}
+
+.steps-block__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.steps-block__title {}
+
+.step-block__steps {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.steps-block__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.step__icon {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #f2785c;
+    border-radius: 16px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.step__text {}
