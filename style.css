@@ -155,9 +155,15 @@ header::before {
     width: 60%;
     border: none;
     font-size: 24px;
-    font-family: 'Red Hat Display';
+}
+
+.main-block__search::placeholder {
     font-style: italic;
     color:#f2785c
+}
+
+.main-block__search:focus{
+    outline: none;
 }
 
 .main-block__btn {
