@@ -25,7 +25,7 @@ body {
 
 .btn{
     padding: 14px 32px;
-    font-size: 16px;
+    font-size: 24px;
     color: #ffffff;
     background-color: #0D606F;
     border: none;
@@ -213,3 +213,30 @@ header::before {
 }
 
 .step__text {}
+
+/*-------------------------------------------DESTINATIONS-------------------*/
+.page__destinations {}
+
+.destinations {}
+
+.destinations__container {}
+
+.destinations__body {}
+
+.destinations__title {}
+
+.title {}
+
+.destinations__slider {}
+
+.slider__wrapper {}
+
+.slider__item {}
+
+.slider__text {}
+
+.slider__controls {}
+
+.slider_btn {}
+
+.destinations__btn {}
