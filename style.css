@@ -6,7 +6,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
-  color: #0D606F
+  color: #0D606F;
 }
 
 .wrapper {
@@ -30,6 +30,14 @@ body {
     background-color: #0D606F;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-arrow {
+    padding-left: 80px;
+    background-image: url('./assets/svg/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: 30px center;
 }
 
 .title {
@@ -199,6 +207,7 @@ header::before {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    width: 320px;
 }
 
 .step__icon {
@@ -215,28 +224,83 @@ header::before {
 .step__text {}
 
 /*-------------------------------------------DESTINATIONS-------------------*/
-.page__destinations {}
+.page__destinations {
+    overflow-x: hidden;
+}
 
 .destinations {}
 
 .destinations__container {}
 
-.destinations__body {}
+.destinations__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
 
 .destinations__title {}
 
-.title {}
+.destinations__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 2520px;
+}
 
-.destinations__slider {}
+.slider__wrapper {
+    display: flex;
+    gap: 60px;
+}
 
-.slider__wrapper {}
+.slider__item {
+    padding: 40px 15px;
+    display: flex;
+    width: 800px;
+    height: 800px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
 
-.slider__item {}
+.slider__item#Spain {
+    background-image: url(https://images.unsplash.com/photo-1525296682-101c994ad524?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80);
+}
 
-.slider__text {}
+.slider__item#Japan {
+    background-image: url(https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1053&q=80);
+}
 
-.slider__controls {}
+.slider__item#USA {
+    background-image: url(https://images.unsplash.com/photo-1610312278520-bcc893a3ff1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1147&q=80);
+}
 
-.slider_btn {}
+.slider__text {
+    margin-top: auto;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.slider__controls {
+    display: flex;
+    gap: 10px;
+}
+
+.slider__btn {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(242, 120, 92, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__btn-active {
+    background-color: #f2785c;
+}
 
 .destinations__btn {}
